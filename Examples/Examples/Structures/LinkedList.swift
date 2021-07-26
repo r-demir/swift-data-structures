@@ -56,6 +56,7 @@ struct LinkedList {
     @discardableResult mutating func removeLast() -> Node? {
         if head == nil || head?.next == nil {
             head = nil
+            count = 0
             return head
         } else {
             var tail = head
@@ -65,6 +66,7 @@ struct LinkedList {
                 tail = tail?.next
             }
             previous?.next = nil
+            count -= 1
             return tail
         }
     }
