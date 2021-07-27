@@ -17,9 +17,9 @@
 
 import Foundation
 
-class Node {
+class ListNode {
     var value: String?
-    var next: Node?
+    var next: ListNode?
     
     init(value: String?) {
         self.value = value
@@ -28,7 +28,7 @@ class Node {
 
     
 struct LinkedList {
-    private var head: Node?
+    private var head: ListNode?
     private var count = 0
     
     mutating func isEmpty() -> Bool {
@@ -40,27 +40,27 @@ struct LinkedList {
     }
     
     mutating func add(value: String) {
-        let node = Node(value: value)
+        let ListNode = ListNode(value: value)
         if head == nil {
-            head = node
+            head = ListNode
         } else {
             var tail = head
             while tail?.next != nil {
                 tail = tail?.next
             }
-            tail?.next = node
+            tail?.next = ListNode
         }
         count += 1
     }
     
-    @discardableResult mutating func removeLast() -> Node? {
+    @discardableResult mutating func removeLast() -> ListNode? {
         if head == nil || head?.next == nil {
             head = nil
             count = 0
             return head
         } else {
             var tail = head
-            var previous: Node?
+            var previous: ListNode?
             while tail?.next != nil {
                 previous = tail
                 tail = tail?.next

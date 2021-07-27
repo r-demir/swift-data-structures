@@ -10,6 +10,8 @@
 		C5242269268BB1DA0095DD2C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5242268268BB1DA0095DD2C /* main.swift */; };
 		C5242272268BB7750095DD2C /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5242271268BB7750095DD2C /* Stack.swift */; };
 		C55E214126AECFBE00B152EF /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E214026AECFBE00B152EF /* LinkedList.swift */; };
+		C56FEAB926AFEC5600038912 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56FEAB826AFEC5600038912 /* Tree.swift */; };
+		C599A74326B01DD900F84877 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599A74226B01DD900F84877 /* Graph.swift */; };
 		C5BE0B2A26AE83EC00859996 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BE0B2926AE83EC00859996 /* Queue.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		C5242268268BB1DA0095DD2C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C5242271268BB7750095DD2C /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		C55E214026AECFBE00B152EF /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		C56FEAB826AFEC5600038912 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		C599A74226B01DD900F84877 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		C5BE0B2926AE83EC00859996 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,8 @@
 				C5242271268BB7750095DD2C /* Stack.swift */,
 				C5BE0B2926AE83EC00859996 /* Queue.swift */,
 				C55E214026AECFBE00B152EF /* LinkedList.swift */,
+				C56FEAB826AFEC5600038912 /* Tree.swift */,
+				C599A74226B01DD900F84877 /* Graph.swift */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -106,7 +112,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					C5242264268BB1DA0095DD2C = {
 						CreatedOnToolsVersion = 12.4;
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C599A74326B01DD900F84877 /* Graph.swift in Sources */,
+				C56FEAB926AFEC5600038912 /* Tree.swift in Sources */,
 				C5242272268BB7750095DD2C /* Stack.swift in Sources */,
 				C5BE0B2A26AE83EC00859996 /* Queue.swift in Sources */,
 				C55E214126AECFBE00B152EF /* LinkedList.swift in Sources */,
@@ -264,6 +272,7 @@
 		C524226D268BB1DA0095DD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7L47FJM38D;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -275,6 +284,7 @@
 		C524226E268BB1DA0095DD2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7L47FJM38D;
 				ENABLE_HARDENED_RUNTIME = YES;
