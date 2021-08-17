@@ -10,4 +10,7 @@
    <FileRef
       location = "group:Graph-Matrix.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Array.xcodeproj">
+   </FileRef>
 </Workspace>
